@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* Importando fonts do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+/* Configurando variáveis */
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, Sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+}
+
+/* Linha abaixo serve para zera as margins e paddings da pagina para não atrapalhar as configurações que estão por vir */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    /* A linha abaixo está indicando a o tamanho mínimo do html e do body vai ser 100% da ALTURA da viewport (VH) */
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /* Para deixar o texto todo em letras maiusculas para usar:
+    text-transform: uppercase;   */
+    /* A linha baixo ainda deixa as letras maiusculas, entretanto deixa maior as letras iniciais de cada palavra */
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    /* Abaixo foi feita uma configuração onde o tamanho da font se adapta 10% a LARGURA viewport (Vw) da tela*/
+    font-size: 10vw;
+}
+
+/*Deixando o paragrafo dentro do header com espaçamento apenas para baixo. */
+header > p{
+    padding-bottom: 50px;
+}
+
+/*Deixando todos os links com as seguintes configurações: Letra branca, sem sublinhado e negrito. */
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Deixando os links sublinhado apenas quando o mouse passar em cima. */
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    /* Ajustando o padding (espaçamento) para cima e para baixo em 10% da altura da tela dentro das section. */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /* Ajustando o padding (espaçamento) para esquerda */
+    padding-left: 30px;
+    /* Adicionando espaçamento entre as linhas */
+    line-height: 2em;
+    font-family: var(--fonte3);
+    /* Abaixo foi feita uma configuração onde o tamanho da font se adapta 5% a LARGURA viewport (Vw) da tela*/
+    font-size: 3vw;
+}
+
+/* Criando espaço para baxio nos PARAGRAFOS dentro das SECTION */
+section > p{
+    padding-bottom:2em;
+}
+
+/* Configurando a classe NORMAL dentro das section - 
+    OBS: lembrando que o ponto determina que se trata de uma CLASS, a hastag (#) determina um ID*/
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+/* Configurando a classe IMAGEM dentro das section - 
+    OBS: lembrando que o ponto determina que se trata de uma CLASS, a hastag (#) determina um ID*/
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    /*Abaixo foi feito uma sombra para dentro da caixa  */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.386);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Ajustando cor de um fundo e largura para todo PARAGRAFO da classe IMAGEM dentro de toda SECTION */
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
