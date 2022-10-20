@@ -67,7 +67,7 @@ section{
     line-height: 2em;
     font-family: var(--fonte3);
     /* Abaixo foi feita uma configuração onde o tamanho da font se adapta 5% a LARGURA viewport (Vw) da tela*/
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 /* Criando espaço para baxio nos PARAGRAFOS dentro das SECTION */
