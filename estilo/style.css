@@ -112,7 +112,7 @@ section#img02{
 }
 
 footer{
-    background-color: black;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.649), rgba(128, 128, 128, 0.608));
     color: white;
     text-align: center;
     padding: 10px;
